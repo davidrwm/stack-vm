@@ -14,7 +14,7 @@ OBJ :=	\
 		./obj/main.o											\
 		./obj/memory.o											\
 
-ssvm.exe: $(OBJ)
+stackvm.exe: $(OBJ)
 	$(CC) $(OBJ) -o $@ $(LIBPATH) $(LIBS)
 
 ./obj/%.o: ./src/%.c
